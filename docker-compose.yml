@@ -4,8 +4,8 @@ networks:
   local:
 
 services:
-  fruit:
-    container_name: "fruit"
+  employee:
+    container_name: "employee"
     image: serrodcal/quarkus-microservice-example:1.0.0
     #image: serrodcal/quarkus-microservice-example:1.0.0-cacheable
     ports:
