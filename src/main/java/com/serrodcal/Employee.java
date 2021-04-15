@@ -9,6 +9,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Cacheable
 @Table(name = "employees")
 @NamedQuery(name = Employee.FIND_ALL, query = "SELECT e FROM Employee e ORDER BY e.name")
 public class Employee {
