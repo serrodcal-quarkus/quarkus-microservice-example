@@ -15,7 +15,7 @@ services:
     networks:
       - local
     depends_on:
-      - potgres
+      - postgres
     deploy:
       resources:
         limits:
@@ -23,8 +23,8 @@ services:
           memory: 300M
         reservations:
           memory: 300M
-  potgres:
-    container_name: "potgres"
+  postgres:
+    container_name: "postgres"
     image: postgres:10.15-alpine
     ports:
       - "5432:5432"
